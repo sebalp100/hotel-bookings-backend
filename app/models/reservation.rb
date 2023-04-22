@@ -1,4 +1,3 @@
-Resolving dependencies...
 class Reservation < ApplicationRecord
   belongs_to :user
   belongs_to :room
