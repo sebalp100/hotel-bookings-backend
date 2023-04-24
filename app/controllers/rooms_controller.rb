@@ -1,6 +1,5 @@
 class RoomsController < ApplicationController
   before_action :set_room, only: %i[show update destroy]
-  before_action :authenticate_user!
 
   # GET /rooms
   def index
@@ -48,6 +47,6 @@ class RoomsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def room_params
-    params.require(:room).permit(:name, :description, :wi - fi, :tv, :room_service, :beds, :image_url, :reserved)
+    params.require(:room).permit(:name, :description, :wifi, :tv, :room_service, :beds, :image_url, :reserved)
   end
 end
