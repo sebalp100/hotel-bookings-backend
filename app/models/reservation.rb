@@ -6,9 +6,9 @@ class Reservation < ApplicationRecord
   delegate :name, to: :room, prefix: true
 
   def unique_room_date
-    return unless Reservation.where(room_id:, date:).exists?
+    # return unless Reservation.where(room_id:, date:).exists?
 
-    errors.add(:base, 'This room is already reserved for this date')
+    # errors.add(:base, 'This room is already reserved for this date')
   end
 
   def g_room_name
