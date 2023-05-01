@@ -1,12 +1,10 @@
 require 'swagger_helper'
+# rubocop:disable Metrics/BlockLength
 
 RSpec.describe 'reservations', type: :request do
-
   path '/reservations' do
-
     get('list reservations') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
@@ -24,7 +22,7 @@ RSpec.describe 'reservations', type: :request do
         parameter name: :reservation, in: :body, schema: {
           type: :object,
           properties: {
-            user_id: { type: :integer},
+            user_id: { type: :integer },
             room_id: { type: :integer },
             city: { type: :string },
             date: { type: :string }

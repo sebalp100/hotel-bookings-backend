@@ -1,12 +1,9 @@
 require 'swagger_helper'
-
+# rubocop:disable Metrics/BlockLength
 RSpec.describe 'rooms', type: :request do
-
   path '/rooms' do
-
     get('list rooms') do
       response(200, 'successful') do
-
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {
