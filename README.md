@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Docs: http://localhost:3000/api-docs/index.html
