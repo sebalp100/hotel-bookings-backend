@@ -32,6 +32,8 @@
 
 This is a Hotel bookings app that allows users to search a list of rooms availables and make reservations for 24hs. This is the backend repo.
 
+Api documentation can be seen following this link after starting a local server: http://localhost:3000/api-docs/index.html
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -125,6 +127,8 @@ To run the project, execute the following commands in your Ruby terminal:
 
 `rails s` to run the dev server.
 
+Go to http://localhost:3000/api-docs/index.html to see API documentation.
+
 If you want to use the front-end repo, clone it: https://github.com/sebalp100/hotel-bookings-frontend and run `npm install` and `npm start`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -186,7 +190,8 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Microverse
 - Design used: https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign by Murat Korkmaz on Behance
--
+- John Guest for his guide about authentication: https://medium.com/swlh/react-reactions-cfdde7f08dff
+- Dave Grey for his tutorial about RTK Query: https://www.youtube.com/watch?v=HyZzCHgG3AY&t=8s&ab_channel=DaveGray
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,5 +202,3 @@ Give a ⭐️ if you like this project!
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Docs: http://localhost:3000/api-docs/index.html
