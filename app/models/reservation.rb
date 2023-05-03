@@ -14,4 +14,7 @@ class Reservation < ApplicationRecord
   def g_room_name
     room.name
   end
+
+  validates :city, presence: true
+  validates :date, presence: true
 end
