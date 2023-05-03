@@ -2,6 +2,9 @@
 
 <div align="center">
 
+![hotel-booking-low-resolution-logo-color-on-transparent-background](https://user-images.githubusercontent.com/111214189/235814475-89038f59-0b1f-4f91-81e1-86f64512d4d2.png)
+
+
   <h3><b>Hotel Booking backend</b></h3>
 
 </div>
