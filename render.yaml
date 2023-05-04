@@ -2,10 +2,12 @@ databases:
   - name: hotelbookings
     databaseName: hotelbookings
     user: hotelbookings
+    plan: free
 
 services:
   - type: web
     name: hotelbookings
+    plan: free
     env: ruby
     buildCommand: './bin/render-build.sh'
     startCommand: 'bundle exec puma -C config/puma.rb'
@@ -16,3 +18,8 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
+  - type: redis
+    name: redis
+    ipAllowList: []
+    plan: free
+    maxmemoryPolicy: noeviction
