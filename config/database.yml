@@ -85,6 +85,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: hotel_bookings_backend_production
   username: hotel_bookings_backend
   password: <%= ENV["HOTEL_BOOKINGS_BACKEND_DATABASE_PASSWORD"] %>
