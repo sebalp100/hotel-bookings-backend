@@ -3,10 +3,6 @@ class SessionsController < ApplicationController
     user = User.find_by(username: params[:username])
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      cookies[:my_cookie] = {
-        value: "my_value",
-        domain: ".onrender.com"
-      }
       render json: { message: 'Logged in successfully' }
     else
       render json: { message: 'Invalid username or password' }, status: :unauthorized
