@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://hotel-bookings-frontend-r1held8dq-sebalp100.vercel.app/'
+    origins 'http://76.76.21.9'
     resource '*', 
       headers: :any, 
       methods: [:get, :post, :put, :patch, :delete, :options, :head],
