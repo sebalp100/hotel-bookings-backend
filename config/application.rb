@@ -22,7 +22,14 @@ module HotelBookingsBackend
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
+    config.action_dispatch.default_headers = {
+    'Access-Control-Allow-Origin' => 'https://hotel-bookings.onrender.com',
+    'Access-Control-Allow-Methods' => %w{GET POST PUT DELETE OPTIONS}.join(","),
+    'Access-Control-Allow-Headers' => %w{Origin Accept Content-Type X-Requested-With X-CSRF-Token}.join(",")
+    }
     config.api_only = true
+    config.action_dispatch.cookies_same_site_protection = :none
+    config.session_store :cookie_store, key: '_hotel-booking', domain: :all, tld_length: 2, secure: Rails.env.production?
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore, key: '_hotel-booking'
   end
