@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://hotel-bookings-frontend-pgfmtudo4-sebalp100.vercel.app/', 'hotel-bookings-frontend.vercel.app', 'hotel-bookings-frontend-git-render-deploy-branch-sebalp100.vercel.app'
+    origins 'https://hotel-bookings-frontend-pgfmtudo4-sebalp100.vercel.app/', 'hotel-bookings-frontend.vercel.app', 'hotel-bookings-frontend-git-render-deploy-branch-sebalp100.vercel.app', 'http://hotel-bookings-frontend-sebalp100.vercel.app/', 'http://hotel-bookings-frontend-git-render-deploy-branch-sebalp100.vercel.app/', 'http://hotel-bookings-frontend-sebalp100.vercel.app/'
     resource '*', 
       headers: :any, 
       methods: [:get, :post, :put, :patch, :delete, :options, :head],
