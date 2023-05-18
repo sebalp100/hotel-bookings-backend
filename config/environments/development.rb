@@ -14,6 +14,8 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+  config.hosts << "rails-production-68eb.up.railway.app"
+
   # Enable server timing
   config.server_timing = true
 
