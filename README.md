@@ -90,7 +90,7 @@ Api documentation can be seen following this link after starting a local server:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Not available yet
+https://hotel-bookings-frontend.vercel.app/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
