@@ -22,8 +22,7 @@ module HotelBookingsBackend
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
-    config.action_dispatch.cookies_serializer = :hybrid
-    config.session_store :cookie_store, same_site: :none, secure: true
+  
     config.api_only = true
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore, key: '_hotel-booking'
